@@ -4,7 +4,8 @@ import '../stylesheets/app.css'
 // Import libraries we need.
 import { default as Web3 } from 'web3'
 import { default as contract } from 'truffle-contract'
-
+var BigNumber = require('bignumber.js')
+var Web3 = require('web3')
 /*
  * When you compile and deploy your Voting contract,
  * truffle stores the abi and deployed address in a json
