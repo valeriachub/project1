@@ -1,4 +1,4 @@
-// Import the page's CSS. Webpack will know what to do with it.
+
 import '../stylesheets/app.css'
 
 // Import libraries we need.
@@ -41,14 +41,6 @@ $(document).ready(function () {
       $(id_tocken_bal).html(result.toString())
     })
   })
-
-  function send() {
-    // address = document.getElementById("address").value
-    // console.log(address.toString());
-
-    console.log('sdsdss')
-  }
-
 })
 
 
