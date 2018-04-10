@@ -22,6 +22,10 @@
             <td id="id_amount"></td>
         </tr>
         <tr>
+            <td>Sender token amount</td>
+            <td id="id_t_amount"></td>
+        </tr>
+        <tr>
             <td>Block number</td>
             <td id="id_block_num"></td>
         </tr>
@@ -34,16 +38,59 @@
     <div id="msg"></div>
 </div>
 
-<p><strong>Send tocken to address</strong></p>
-<div >
-    <input id="address" size="42" placeholder="0x0000000000000000000000000000000000000000">
-    <input id="amount" placeholder="Amount of tokens to send">
-    <button type="button" onclick="sendButton()" class="btn btn-primary" >Send</button>
+<div class="table-responsive">
+    <table class="table table-bordered">
+        <tbody>
+        <tr>
+            <td>
+                <p><strong>Send token to address</strong></p>
+                <div>
+                    <input id="address" size="42" placeholder="0x0000000000000000000000000000000000000000">
+                    <input id="amount" placeholder="Amount of tokens to send">
+                    <button type="button" onclick="sendButton()" class="btn btn-primary">Send</button>
+                </div>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="table-responsive">
+    <table class="table table-bordered">
+        <tbody>
+        <tr>
+            <td>
+                <p><strong>Show token from address</strong></p>
+                <div>
+                    <input id="address2" size="42" placeholder="0x0000000000000000000000000000000000000000">
+                    <button type="button" onclick="showButton()" class="btn btn-primary">Show</button>
+                    <p>Token balance</p>
+                    <p id="id_result"></p>
+                </div>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="table-responsive">
+    <table class="table table-bordered">
+        <tbody>
+        <tr>
+            <td>
+                <p><strong>Test accounts</strong></p>
+                <p>coinbase : 0x84e7F3bFc78f2Fc5d4Fe47AfdFC94A8cd3CD1CFd</p>
+                <p>second : 0x2c1f3A6Ee8f7d8455EC5C38559E3a0BA20748aAa</p>
+            </td>
+        </tr>
+        </tbody>
+    </table>
 </div>
 
 </body>
 <script src="https://cdn.rawgit.com/ethereum/web3.js/develop/dist/web3.js"></script>
-<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
-<script src="app.js"></script>
-<script src="./app/javascripts/functions.js"></script>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="javascripts/app.js"></script>
+<script src="javascripts/functions.js"></script>
+
 </html>
